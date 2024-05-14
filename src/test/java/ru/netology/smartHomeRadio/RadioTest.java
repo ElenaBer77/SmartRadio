@@ -17,7 +17,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldSetToMaxStation() { //устанвка максимальной станции
+    public void shouldSetToMaxStations() { //устанвка максимальной станции
         radio.setToMaxStation();
         assertEquals(9, radio.getCurrentStation());
     }
