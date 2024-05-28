@@ -21,7 +21,7 @@ public class RadioTest {
     public void shouldSetToMaxStations() { //устанвка максимальной станции
 
         radio.setCurrentStation(9);
-        assertEquals(0, radio.getCurrentStation());
+        assertEquals(9, radio.getCurrentStation());
     }
 
     @Test
@@ -55,19 +55,19 @@ public class RadioTest {
     }
 
     @Test
-    public void stationAboveMaxCurrentStation9() { //переключение через кнопку next, выше max
+    public void stationAboveCurrentStation0() { //переключение через кнопку next, выше max
+
+        radio.setCurrentStation(0);
+        radio.next();
+        assertEquals(1, radio.getCurrentStation());
+    }
+
+    @Test
+    public void stationAboveMaxCurrentStation8() { //переключение выше max
 
         radio.setCurrentStation(9);
         radio.next();
         assertEquals(0, radio.getCurrentStation());
-    }
-
-    @Test
-    public void stationAboveMaxCurrentStation10() { //переключение выше max
-
-        radio.setCurrentStation(8);
-        radio.next();
-        assertEquals(9, radio.getCurrentStation());
     }
 
     @Test
@@ -151,7 +151,7 @@ public class RadioTest {
 
         radio.setCurrentVolume(0);
         radio.lessVolume();
-        assertEquals(100, radio.getCurrentVolume());
+        assertEquals(0, radio.getCurrentVolume());
     }
 
     @Test
@@ -199,7 +199,7 @@ public class RadioTest {
 
         radio.setCurrentVolume(100);
         radio.moreVolume();
-        assertEquals(0, radio.getCurrentVolume());
+        assertEquals(100, radio.getCurrentVolume());
     }
 
     @Test
