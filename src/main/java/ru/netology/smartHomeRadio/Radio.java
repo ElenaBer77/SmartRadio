@@ -32,7 +32,7 @@ public class Radio {
     }
 
     public void next() {
-        if (currentStation >= 9) {
+        if (currentStation >= maxStation/*9*/) {
             setCurrentStation(minStation);
         } else {
             setCurrentStation(currentStation + 1);
