@@ -3,7 +3,7 @@ package ru.netology.smartHomeRadio;
 
 public class Radio {
 
-    private int maxStation = 9;
+    private int maxStation = 20;
     private int minStation = 0;
     private int maxVolume = 100;
     private int minVolume = 0;

@@ -209,6 +209,12 @@ public class RadioTest {
         radio.moreVolume();
         assertEquals(1, radio.getCurrentVolume());
     }
+    @Test
+    public void shouldSetStation15() { //установка станции 15
+
+        radio.setCurrentStation(15);
+        assertEquals(15, radio.getCurrentStation());
+    }
 
 
 }
