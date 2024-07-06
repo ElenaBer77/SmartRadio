@@ -20,8 +20,8 @@ public class RadioTest {
     @Test
     public void shouldSetToMaxStations() { //устанвка максимальной станции
 
-        radio.setCurrentStation(9);
-        assertEquals(9, radio.getCurrentStation());
+        radio.setCurrentStation(19);
+        assertEquals(19, radio.getCurrentStation());
     }
 
     @Test
@@ -75,7 +75,7 @@ public class RadioTest {
 
         radio.setCurrentStation(0);
         radio.prev();
-        assertEquals(9, radio.getCurrentStation());
+        assertEquals(19, radio.getCurrentStation());
     }
 
     @Test
@@ -213,7 +213,7 @@ public class RadioTest {
     public void shouldSetStation15() { //установка станции 15
 
         radio.setCurrentStation(15);
-        assertEquals(0, radio.getCurrentStation());
+        assertEquals(15, radio.getCurrentStation());
     }
 
 

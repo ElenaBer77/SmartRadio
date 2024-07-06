@@ -3,7 +3,7 @@ package ru.netology.smartHomeRadio;
 
 public class Radio {
 
-    private int maxStation = 9;
+    private int maxStation = 19;
     private int minStation = 0;
     private int maxVolume = 100;
     private int minVolume = 0;
@@ -16,8 +16,7 @@ public class Radio {
     }
 
     public Radio(int numberStation) {
-        this.numberStation = 19;
-        // maxStation = minStation + numberStation - 1;
+        //maxStation = minStation + numberStation - 1;//
     }
 
     public int getCurrentStation() {
